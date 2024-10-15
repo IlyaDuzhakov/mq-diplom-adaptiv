@@ -1,0 +1,120 @@
+.popup{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+
+     /* display: none; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .popup-content {
+        width: 390px;
+        height: 590px;
+        padding: 30px 20px;
+        background-color: #fff;
+        position: relative;
+
+        .popup-title {
+            text-align: center;
+            text-transform: uppercase;
+            position: relative;
+            margin-bottom: 42px;
+
+                &::after {
+                content: '';
+                position: absolute;
+                width: 100px;
+                height: 2px;
+                bottom: -13px;
+                background-color: rgb(181, 159, 91);
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }   
+}
+
+.popup-close {
+    position: absolute;
+    right: -2px;
+    top: -34px;
+    font-size: 30px;
+    color: #fff
+}
+
+.popup__textarea {
+    height: 130px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 28px;
+    color: black;
+    padding-top: 20px;
+    padding-left: 22px;
+}
+
+.number {
+    margin-bottom: 35px;
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(232, 237, 237);
+}
+
+.popup-subscribe {
+    margin-bottom: 35px;
+}
+
+.popup-btn {
+    padding: 15px 35px;
+	border: none;
+	background-color: rgb(181, 159, 91);
+	font-size: 17px;
+	color: #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
+	box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12),
+	0 3px 1px -1px rgba(0, 0, 0, 0.2);
+	width: 100%;
+}
+
+.popup-radios {
+    margin-top: 10px;
+ }
+
+ input[type="radio"] {
+    border: 1px solid black;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: text-bottom;
+ }
+
+ input[type="radio"]::before {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+ }
+
+ input[type="radio"]:checked::before {
+    background-color: rgb(181, 159, 91);
+    border: 5px solid transparent;
+    border-radius: 50%;
+    margin: 4px;
+ }
+
+ .popup-radios label {
+    margin-right: 6px;
+ }
+
+ 

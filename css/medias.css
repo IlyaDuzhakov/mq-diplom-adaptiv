@@ -1,0 +1,26 @@
+/* медиазапросы */
+
+	@media (max-width: 768px) {
+		.groups {
+			flex: 1 1 calc(50% - 5px);
+		}
+	}
+
+	
+	@media (max-width: 1200px) {
+		.groups {
+			flex: 1 1 calc(25% - 5px);
+		}
+	}
+
+	@media (max-width: 900px) {
+		.groups {
+			flex: 1 1 calc(50% - 5px);
+		}
+	}
+	
+	@media (max-width: 360px) {
+		.groups {
+			flex: 1 1 calc(100% - 5px);
+		}
+	}
